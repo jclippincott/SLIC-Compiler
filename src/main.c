@@ -1,0 +1,1 @@
+#include <stdio.h>#include "y.tab.h"#include "symbolTable.h"#include "codeGenerator.h"int main(){   if (yyparse())      printf("Syntax error, parsing failed\n");   else	  codegen();     return(0);}
